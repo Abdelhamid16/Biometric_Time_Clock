@@ -1,0 +1,126 @@
+
+
+
+
+
+
+
+
+GET http://localhost:3000/employees
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+
+GET http://localhost:3000/employees?dateCreated=2023-11-04
+
+
+
+
+
+
+
+
+
+
+###
+GET http://localhost:3000/employees/
+
+###
+
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "lastName": "Dini", 
+    "firstName": "Abdelhammid", 
+    "department": "IT"
+}
+
+###
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "lastName": "Touati", 
+    "firstName": "Yassine", 
+    "department": "Finance"
+}
+
+
+
+
+
+
+
+
+
+//Update , we use Moongose Id
+###
+PATCH  http://localhost:3000/employees/6546c54fc8bfc2a28883697d
+Content-Type: application/json
+
+{
+    "lastName": "Nidal", 
+    "firstName": "Smach", 
+    "department": "HR"
+}
+
+
+//Delete , we use Moongose Id
+###
+
+DELETE  http://localhost:3000/employees/6546c54fc8bfc2a28883697d
+
+###
+
+
+
+
+
+
+
+// Check-IN
+POST http://localhost:3000/employees/check-in
+Content-Type: application/json
+
+{
+    "employeeId": "1699136794643", 
+    "comment": "Check-IN"
+    
+}
+
+###
+
+
+
+
+
+//Check out 
+POST http://localhost:3000/employees/check-out
+Content-Type: application/json
+
+{
+    "employeeId": "1699114183658", 
+    "comment": "Check-OUT"
+    
+}
+
