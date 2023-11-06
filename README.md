@@ -9,6 +9,6 @@ DATA_URL=mongodb://localhost:port/employees
 
 # Run the project by this command 
 
-npm npm run devStart 
+npm run devStart 
 
 # Do the tests 
